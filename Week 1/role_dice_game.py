@@ -30,7 +30,7 @@ def winner(players):
     winner = [player['name'] for player in players if player['score'] == biggest]
     print(f"{winner}님은 {biggest}점을 획득하여 우승자가 되었습니다.")
 
-def main():
+def real_game():
     while True:
         print("""주사위 굴리기 게임에 오신 여러분들 환영합니다
 주사위를 굴려 가장 큰 수를 획득한 플레이어가 우승자가 됩니다.
@@ -47,4 +47,4 @@ def main():
         elif a == 'n':
             print("이용해주셔서 감사합니다")
             break
-print(main())
+print(real_game())
